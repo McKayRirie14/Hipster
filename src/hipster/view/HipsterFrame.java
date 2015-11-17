@@ -3,10 +3,10 @@
  */
 package hipster.view;
 
-import javaxswing.JFrame;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-import hipster.controller.HisteAppController;
+import hipster.controller.HipsterAppController;
 
 /**
  * @author mrir2917
@@ -16,8 +16,8 @@ import hipster.controller.HisteAppController;
 
 public class HipsterFrame
 {
-	prive HipsterAppController baseController;
-	private Hipsterpanel basePanel;
+	private HipsterAppController baseController;
+	private HipsterPanel basePanel;
 	
 	public HipsterFrame(HipsterAppController baseController)
 	{
@@ -28,13 +28,13 @@ public class HipsterFrame
 	
 	public String getResponse(String prompt)
 	{
-		String response = JOptionPane.showInputDialog(this, prombt);
+		String response = JOptionPane.showInputDialog(this, prompt);
 		return response;
 	}
 	
 	private void setupFrame()
 	{
-		this.setContentPane(basePanel);
+		this.setContentPanel(basePanel);
 		this.setSize(500,500);
 		this.setResizable(false);
 		this.setVisable(true);

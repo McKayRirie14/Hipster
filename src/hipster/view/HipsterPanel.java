@@ -44,13 +44,15 @@ public class HipsterPanel extends JPanel
 		this.setLayout(baseLayout);
 		this.setBackground();
 		this.add(phraseComboBox);
-		this.add(bookPageCOuntLabel);
-		this.add(bookTitlelbel);
+		this.add(bookPageCountLabel);
+		this.add(bookTitleLabel);
 		this.add(bookPriceLabel);
 		this.add(bookSubjectLabel);
 		this.add(changeBookButton);
 		
 	}
+	
+	private void setupLayout()
 	
 	private void setpListeners()
 	{
