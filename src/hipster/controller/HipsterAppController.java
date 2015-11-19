@@ -15,7 +15,7 @@ public class HipsterAppController
 	
 	public void start();
 	{
-		Sring myName = baseFrame.getResponse("What is your name?");
+		String myName = baseFrame.getResponse("What is your name?");
 		firstHipster.setName(myName);
 		baseFrame.setTitle (myName + "'s Hipster Project!");
 	}

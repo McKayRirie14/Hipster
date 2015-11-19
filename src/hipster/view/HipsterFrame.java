@@ -37,7 +37,7 @@ public class HipsterFrame
 		this.setContentPanel(basePanel);
 		this.setSize(500,500);
 		this.setResizable(false);
-		this.setVisable(true);
+		this.setVisible(true);
 	}
 	
 	public HispsterAppController getBaseController()
