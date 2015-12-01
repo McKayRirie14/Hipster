@@ -39,7 +39,7 @@ public class Hipster
 		firstBook.setPageCount(405);
 		firstBook.setPrice(24.99);
 		
-		secondBook = new Book()
+		secondBook = new Book();
 		secondBook.setAuthor("Stephen King");
 		secondBook.setTitle("The Dank Tower");
 		secondBook.setSubject("Fantasy");
@@ -53,14 +53,35 @@ public class Hipster
 		hipsterBooks[1] = secondBook;
 		hipsterBooks[2] = thirdBook;
 	}
-	
+
 	public Hipster(String name)
-	{
-		this.name = name;
-	}
-	
-	public String getName()
 	{
 		
 	}
+	public String getName()
+	{
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String[] getHipsterPhrases() {
+		return hipsterPhrases;
+	}
+
+	public void setHipsterPhrases(String[] hipsterPhrases) {
+		this.hipsterPhrases = hipsterPhrases;
+	}
+
+	public Book[] getHipsterBooks() {
+		return hipsterBooks;
+	}
+
+	public void setHipsterBooks(Book[] hipsterBooks) {
+		this.hipsterBooks = hipsterBooks;
+	}
 }
+
+

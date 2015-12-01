@@ -5,6 +5,7 @@ public class Book
 	private int pageCount;
 	private String author;
 	private String title;
+	private String subject;
 	private double price;
 	
 	public Book()
@@ -25,10 +26,21 @@ public class Book
 		this.price = price;
 	}
 
-	public String getAuthor() {
+	public String getAuthor() 
+	{
 		return author;
 	}
 
+	public String getSubject()
+	{
+		return subject;
+	}
+	
+	public void setSubject(String subject)
+	{
+		this.subject = subject;
+	}
+	
 	public void setAuthor(String author) {
 		this.author = author;
 	}

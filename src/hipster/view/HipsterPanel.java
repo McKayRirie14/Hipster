@@ -85,7 +85,7 @@ public class HipsterPanel extends JPanel
 	{
 			public void actionPerformed(ActionEvent click)
 			{
-				Book[] tempBooks = baseCOntroller.getFirstHipster().getHipsterBooks();
+				Book[] tempBooks = baseController.getFirstHipster().getHipsterBooks();
 				if(startClick < maxClicks)
 				{
 					bookSubjectLabel.setText("Book subject: " + tempBooks[startClick].getSubject());
@@ -102,6 +102,7 @@ public class HipsterPanel extends JPanel
 					bookAuthorLabel.setText("Book author: ");
 					bookTitleLabel.setText("Book title: ");
 					bookPageCountLabel.setText("Book price: ");
+					bookPriceLabel.setText("Book price ");
 				}
 			}
 		});
